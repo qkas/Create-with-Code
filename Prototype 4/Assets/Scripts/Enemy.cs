@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float speed = 6f;
+    private Rigidbody rb;
+    private GameObject player;
+
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
+        player = GameObject.Find("Player");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        // destroy enemy if they fall off
+        if (transform.position.y < -10)
+        {
+            Destroy(gameObject);
+        }
+
+        // get vector towards player
+        Vector3 lookDirection = (player.transform.position - transform.position).normalized;
+
+        // move towards the player
+        rb.AddForce(lookDirection * speed);
     }
 }
