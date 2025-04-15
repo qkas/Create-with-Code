@@ -10,5 +10,9 @@ Each prototype can be imported from their according package file in the [Backups
     - Includes **Challenge 2**: Dog ball fetching game
 - **Prototype 3**: Fence jumping game
     - Includes **Challenge 3**: Balloon flight game
+- **Prototype 4**: Sumo battle game
+    - Includes **Challenge 4**: Soccer ball game
+- **Prototype 5**: Flying object clicking game
+    - Includes **Challenge 5**: Food clicking game
 
 #### The lab project of the course is on its separate [repository](https://github.com/qkas/Skelly-gets-Ambushed "Skelly gets Ambushed").
